@@ -1,0 +1,92 @@
+/* variables */
+:root {
+    --main-bg-color: linear-gradient(to left,#f4a261,#f1c0e8);
+    --footer-bg-color: #6C757D;
+    --secondary-text-color: white;
+}
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header */
+.navbar-collapse {
+    justify-content: center
+}
+
+.logo {
+    padding-left: 14em;
+}
+
+/* main */
+body {
+    background-image: var(--main-bg-color);
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 2em;
+    text-align: center;
+} 
+
+form {
+    justify-content: center;
+    justify-items: center;
+    font-size: 14px;
+    max-width: 20em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    gap: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form__button {
+    width: 6em;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 2em;
+}
+
+/* footer */
+footer {
+    color: var(--secondary-text-color);
+    background-color: var(--footer-bg-color);
+    height: 18vh;
+    font-size: 14px;
+} 
+
+.pie-página {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}  
+/* media queries */
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    form {
+        font-size: 12px;
+    }
+} 

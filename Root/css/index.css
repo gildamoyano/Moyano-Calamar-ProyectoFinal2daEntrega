@@ -1,0 +1,97 @@
+/* variables */
+:root {
+    --main-bg-color: linear-gradient(to left,#f4a261,#f1c0e8);
+    --footer-bg-color: #6C757D;
+    --secondary-text-color: white;
+}
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* header */
+.navbar-collapse {
+    justify-content: center
+}
+
+.logo {
+    padding-left: 14em;
+}
+/* Main */
+body {
+    min-height: 100vh;
+    background-image: var(--main-bg-color)
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 35px;
+    color: var(--secondary-text-color);
+    padding-left: 1em;
+}
+
+.texto {
+    padding: 2em;
+    padding-left: 15em;
+    padding-right: 13em;
+}
+
+.títulos {
+    padding: 1em;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.embed-responsive-item {
+    margin-bottom: 12em;
+    margin-top: 4em;
+}
+/* Footer */
+footer {
+    color: var(--secondary-text-color);
+    background-color: var(--footer-bg-color);
+    height: 18vh;
+    font-size: 14px;
+} 
+
+.pie-página {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+/* Media queries */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+    
+    footer {
+        font-size: 10px;
+    }
+} 
